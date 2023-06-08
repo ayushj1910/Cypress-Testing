@@ -8,7 +8,6 @@ it("POM demo", () => {
   cy.visit("https://opensource-demo.orangehrmlive.com/");
 
   loginpage.enterUsername("Admin");
-
   loginpage.enterPassword("admin123");
   loginpage.clickLogin();
 });

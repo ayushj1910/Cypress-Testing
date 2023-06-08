@@ -1,15 +1,16 @@
 export class LoginPage {
+  username_textbox =
+    ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input";
+  password_textbox =
+    ":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input";
+  loginbtn_button = ".oxd-button";
   enterUsername(username) {
-    cy.get(
-      ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input"
-    ).type(username);
+    cy.get(this.username_textbox).type(username);
   }
   enterPassword(password) {
-    cy.get(
-      ":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input"
-    ).type(password);
+    cy.get(this.password_textbox).type(password);
   }
   clickLogin() {
-    cy.get(".oxd-button").click();
+    cy.get(this.loginbtn_button).click();
   }
 }
