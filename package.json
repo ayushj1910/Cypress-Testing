@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.14.0",
-    "cypress-downloadfile": "^1.2.3"
+    "cypress-downloadfile": "^1.2.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "devDependencies": {
     "cypress-file-upload": "^5.0.8"
