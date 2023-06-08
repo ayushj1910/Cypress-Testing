@@ -8,6 +8,7 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 import "cypress-file-upload";
+require("cypress-downloadfile/lib/downloadFileCommand");
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
