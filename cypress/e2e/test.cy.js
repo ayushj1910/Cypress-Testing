@@ -8,5 +8,5 @@ it("google search", () => {
     .should("contain", "Button")
     .should("have.class", "query-btn")
     .should("be.visible")
-    .should("be.disabled");
+    .should("be.enabled");
 });
