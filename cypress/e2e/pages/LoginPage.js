@@ -1,13 +1,13 @@
 export class LoginPage {
-  enterUsername() {
+  enterUsername(username) {
     cy.get(
       ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input"
-    ).type("Admin");
+    ).type(username);
   }
-  enterPassword() {
+  enterPassword(password) {
     cy.get(
       ":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input"
-    ).type("admin123");
+    ).type(password);
   }
   clickLogin() {
     cy.get(".oxd-button").click();
