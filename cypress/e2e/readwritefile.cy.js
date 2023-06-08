@@ -4,3 +4,8 @@ it("Testing fixtures", () => {
     cy.log(data.email);
   });
 });
+it("read files using ReadFile()", () => {
+  cy.readFile("./cypress/fixtures/example.json").then((data) => {
+    cy.log(data.name);
+  });
+});
